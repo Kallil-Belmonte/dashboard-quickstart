@@ -39,8 +39,8 @@ const themeFunctions = {
   },
 
 
-  // HAMBURGER
-  hamburger: function() {
+  // HAMBURGER MENU
+  hamburgerMenu: function() {
     $('.hamburger').click(function() {
       $(this).toggleClass('is-active');
 
@@ -58,7 +58,7 @@ const themeFunctions = {
   init: function() {
     this.tooltips();
     this.topMenu();
-    this.hamburger();
+    this.hamburgerMenu();
   }
 
 }

@@ -4,7 +4,8 @@
 /* HAMBURGER MENU */
 
 .hamburger {
-  padding: 15px;
+  @include size(35px, 25px);
+  padding: 0;
   display: inline-block;
   cursor: pointer;
   transition-property: opacity, filter;
@@ -15,7 +16,7 @@
   text-transform: none;
   background-color: transparent;
   border: 0;
-  margin: 0;
+  margin: 20px 0;
   overflow: visible;
 
   &:hover {
@@ -38,8 +39,7 @@
 }
 
 .hamburger-box {
-  width: 40px;
-  height: 24px;
+  @include square(100%);
   display: inline-block;
   position: relative;
 
@@ -51,9 +51,8 @@
     &,
     &::before,
     &::after {
-      width: 40px;
-      height: 4px;
-      background-color: #000;
+      @include size(100%, 2px);
+      background-color: $gray-800;
       border-radius: 4px;
       position: absolute;
       transition-property: transform;
@@ -109,170 +108,15 @@
   }
 }
 
-//
-// /* NAVBAR BRAND */
-//
-// .navbar {
-//   > .container,
-//   > .container-fluid {
-//     .navbar-brand {
-//       img {
-//         @include size(150px, 21px);
-//       }
-//     }
-//   }
-// }
-//
-//
-// /* NAVBAR FORM */
-//
-// @media (min-width: $grid-breakpoints(sm)) and (max-width: $grid-breakpoints(lg)) {
-//   header .navbar-form {
-//     margin-right: 0;
-//   }
-// }
-//
-// @media (max-width: $grid-breakpoints(sm)) {
-//   header .navbar-form {
-//     margin-top: 0;
-//     margin-bottom: 0;
-//     border-bottom: none;
-//   }
-// }
-//
-//
-// /* MENU SEARCH */
-//
-// .menu-search {
-//   border: 1px solid rgba(152, 166, 173, 0.15);
-//   background: rgba(152, 166, 173, 0.1);
-//   border-radius: $border-radius-lg;
-//   margin-right: 35px;
-//
-//   @media (max-width: $grid-breakpoints(lg)) {
-//     margin-right: 20px;
-//   }
-//
-//   @media (max-width: $grid-breakpoints(sm)) {
-//     margin-right: 0;
-//   }
-//
-//   .form-control {
-//     width: calc(100% - 35px);
-//     background-color: transparent;
-//     border: none;
-//     box-shadow: none;
-//     display: inline-block;
-//     padding-right: 0;
-//   }
-//
-//   button {
-//     border: none;
-//     background: transparent;
-//     transition: color 0.4s ease;
-//
-//     &:hover {
-//       outline: none;
-//       color: lighten($text-color, 15%);
-//     }
-//   }
-// }
 
+/* MAIN MENU */
 
-/* NOTIFICATIONS */
+.main-menu {
+  background-color: $gray-200;
 
-// .notifications {
-//   .button {
-//     font-size: 20px;
-//     padding: 5px;
-//     cursor: pointer;
-//     @include position(absolute, 50%, 15px, auto, auto);
-//     transform: translateY(-50%);
-//
-//     &:focus {
-//       outline: none;
-//     }
-//   }
-//
-//   .number {
-//     font-size: 10px;
-//     color: #fff;
-//     @include square(20px);
-//     border-radius: $border-radius-lg;
-//     background-color: $danger;
-//     @include position(absolute, -2px, -2px);
-//   }
-//
-//   .navbar {
-//     @include size($notifications-width);
-//     background-color: #fff;
-//     border-radius: 0;
-//     border-left: 1px solid darken($navbar-default-bg, 10%);
-//     margin-bottom: 0;
-//     overflow-y: auto;
-//     @include position(fixed, 0, -$notifications-width, 0);
-//     transition: right 0.5s ease;
-//
-//     .title {
-//       font-size: 14px;
-//       font-weight: bold;
-//       text-transform: uppercase;
-//
-//       .fa {
-//         font-size: 20px;
-//         cursor: pointer;
-//         transition: color 0.2s ease;
-//
-//         &:hover {
-//           color: $danger;
-//         }
-//       }
-//     }
-//
-//     li {
-//       padding: 10px 15px;
-//       border-bottom: 1px solid lighten($gray-base, 90%);
-//
-//       a {
-//         color: $text-color;
-//         display: block;
-//         padding: 10px 15px;
-//         margin: -10px -15px;
-//         transition: background-color 0.4s ease;
-//
-//         &:hover,
-//         &:focus {
-//           text-decoration: none;
-//           background-color: lighten($primary, 33%);
-//         }
-//       }
-//
-//       .icon {
-//         @include square(30px);
-//         background: $primary;
-//         color: #fff;
-//         border-radius: $border-radius-lg;
-//         float: left;
-//         margin-right: 10px;
-//         position: relative;
-//
-//         .fa {
-//           @include position(absolute, 50%, auto, auto, 50%);
-//           transform: translate(-50%, -50%);
-//         }
-//       }
-//
-//       .desc {
-//         font-size: 13px;
-//         display: block;
-//         overflow: hidden;
-//         white-space: nowrap;
-//         text-overflow: ellipsis;
-//       }
-//     }
-//   }
-//
-//   .open-notifications {
-//     right: 0;
-//   }
-// }
+  .navbar-nav {
+    .nav-link {
+      padding: 20px;
+    }
+  }
+}

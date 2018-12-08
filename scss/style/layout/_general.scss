@@ -4,9 +4,41 @@
 /* TEXT CONTINUED */
 
 .text-continued {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+  @extend %text-continued;
+}
+
+
+/* CENTER ABSOLUTE */
+
+.center-absolute {
+	@extend %center-absolute;
+}
+
+/* Horizontal center */
+
+.center-absolute-x {
+  @extend %center-absolute-x;
+}
+
+/* Vertical center */
+
+.center-absolute-y {
+  @extend %center-absolute-y;
+}
+
+
+/* BACKGROUND IMAGE */
+
+/* Contain */
+
+.bg-image-contain {
+  @extend %background-image-contain;
+}
+
+/* Cover */
+
+.bg-image-cover {
+  @extend %background-image-cover;
 }
 
 
@@ -82,10 +114,10 @@
 // }
 
 
-/* BODY */
+/* MAIN */
 
-body {
-  font-family: $nunito-font;
+main {
+  margin-left: $side-menu-width;
 }
 
 
@@ -106,29 +138,90 @@ body {
 }
 
 
-/* PAGE TITLE */
+/* BUTTONS */
 
-.page-title {
-  font-size: $page-title-size;
-  color: $page-title-color;
+button,
+.btn {
+  @include style-btn(btn-secondary);
+  @include style-btn(btn-success);
+  @include style-btn(btn-danger);
+  @include style-btn(btn-warning);
+  @include style-btn(btn-info);
 
-  i {
-    font-size: ($page-title-size / 100) * 90; // 90% of $page-title-size
+  @include style-btn-outline(btn-outline-secondary);
+  @include style-btn-outline(btn-outline-success);
+  @include style-btn-outline(btn-outline-danger);
+  @include style-btn-outline(btn-outline-warning);
+  @include style-btn-outline(btn-outline-info);
+
+  &:focus,
+  &.focus,
+  &:disabled,
+  &.disabled,
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active {
+    &,
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
   }
 }
 
-.page-subtitle {
-  color: $page-subtitle-color;
+
+/* FORMS */
+
+.form-control {
+  &:focus {
+    box-shadow: none;
+  }
 }
 
 
 /* TITLE */
 
+.page-title {
+
+}
+
+.page-subtitle {
+
+}
+
 .title {
-  font-size: $title-size;
-  color: $title-color;
+
 }
 
 .subtitle {
-  color: $subtitle-color;
+
+}
+
+
+/* SIDE MENU */
+
+.side-menu {
+  width: $side-menu-width;
+  background-color: $gray-900;
+  top: 0;
+  bottom: 0;
+
+  .logo {
+    width: 50px;
+    margin: 30px auto 0;
+  }
+
+  .items {
+    margin-top: 50px;
+  }
+}
+
+
+/* CONTENT BOX */
+
+.content-box {
+
+
+  > .title {
+
+  }
 }

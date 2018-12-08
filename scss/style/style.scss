@@ -1,26 +1,31 @@
-// BASE
+/*==============================
+HELPERS
+==============================*/
 
-// Bootstrap
-@import "../bootstrap/bootstrap";
-
-// Helpers
 @import "helpers/variables";
+@import "helpers/placeholders";
 @import "helpers/mixins";
 @import "helpers/functions";
-@import "helpers/placeholders";
+
+
+/*==============================
+BOOTSTRAP
+==============================*/
+
+@import "../bootstrap/bootstrap";
 
 
 /*==============================
 PLUGINS
 ==============================*/
 
-@import "plugins/pretty-checkbox";
+@import "plugins/pretty-checkbox/pretty-checkbox";
 
 
 /*==============================
 LAYOUT
 ==============================*/
 
-@import "layout/general";
 @import "layout/header";
+@import "layout/general";
 @import "layout/footer";
