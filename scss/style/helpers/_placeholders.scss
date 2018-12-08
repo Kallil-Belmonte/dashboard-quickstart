@@ -1,0 +1,58 @@
+// ========== PLACEHOLDERS ========== //
+
+//---------- SUMMARY ----------//
+// LINK
+// CENTER
+//---------- END SUMMARY ----------//
+
+
+// LINK
+%link {
+    color: $primary;
+    text-decoration: none;
+}
+
+
+// CENTER
+%center {
+    margin: 0 auto;
+    display: block;
+}
+
+%center-relative {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+%center-relative-y {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+%center-relative-x {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+%center-absolute {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+%center-absolute-y {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+%center-absolute-x {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}

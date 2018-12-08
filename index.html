@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Descrição (máximo 150 caracteres)">
+
+    <title>Nome do Site | Slogan</title>
+
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,400i,700" rel="stylesheet">
+
+    <!--====================
+    CSS
+    ====================-->
+    <!-- FONT: FONTS AWESOME -->
+    <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+
+    <!-- PLUGIN: PRETTY CHECKBOX -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretty-checkbox@3.0/dist/pretty-checkbox.min.css" integrity="sha384-ICB8i/maQ/5+tGLDUEcswB7Ch+OO9Oj8Z4Ov/Gs0gxqfTgLLkD3F43MhcEJ2x6/D" crossorigin="anonymous">
+
+    <!-- CUSTOM -->
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <!--====================
+    HEADER
+    ====================-->
+    <header>
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header flex-c-x">
+            <a class="navbar-brand" href="#">Logo</a>
+
+            <button class="hamburger hamburger--slider pull-right hidden-lg" type="button" data-toggle="collapse" data-target="#toggle-menu" aria-expanded="false">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
+          </div>
+
+          <form action="#" method="get" class="navbar-form navbar-right">
+            <div class="form-group menu-search">
+              <input type="text" class="form-control" placeholder="Pesquisa">
+              <button type="submit" class=""><i class="fa fa-search" aria-hidden="true"></i></button>
+            </div>
+          </form>
+
+          <div class="notifications">
+            <div class="button" tabindex="0" role="button" aria-pressed="false">
+              <i class="fa fa-bell" aria-hidden="true"></i>
+              <span class="flex-c number">50</span>
+            </div>
+            <nav class="navbar">
+              <ul class="list">
+                <li class="title flex-b-c">
+                  Notificações
+                  <i class="fa fa-times-circle-o close-notifications" aria-hidden="true"></i>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="icon">
+                      <i class="fa fa-gear" aria-hidden="true"></i>
+                    </div>
+                    <span>Configurações</span>
+                    <span class="desc">Houve uma alteração nas configurações do sistema.</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="icon">
+                      <i class="fa fa-user-plus" aria-hidden="true"></i>
+                    </div>
+                    <span>Novo Cadastro</span>
+                    <span class="desc">Um novo usuário foi cadastrado como cargo de admin.</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="icon">
+                      <i class="fa fa-comments" aria-hidden="true"></i>
+                    </div>
+                    <span>Nova mensagem</span>
+                    <span class="desc">Uma nova mensagem foi enviada à você pelo John Doe.</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--====================
+    END HEADER
+    ====================-->
+
+
+    <!--====================
+    TOP MENU
+    ====================--
+    <nav class="navbar-default top-menu">
+    <div class="container-fluid">
+    <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#toggle-menu" aria-expanded="false">
+    <span class="sr-only">Abrir menu</span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="toggle-menu">
+    <ul class="nav navbar-nav menu">
+    <li>
+    <a href="#">
+    <i class="fa fa-th" aria-hidden="true"></i> Início
+    </a>
+    </li>
+    <li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+    <i class="fa fa-tint" aria-hidden="true"></i> Interface do Usuário <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu submenu">
+    <li><a href="botoes.html">Botões</a></li>
+    <li><a href="paineis.html">Painéis</a></li>
+    <li><a href="tabs.html">Tabs</a></li>
+    <li><a href="modais.html">Modais</a></li>
+    <li><a href="alertas.html">Alertas</a></li>
+    <li><a href="collapses.html">Collapses</a></li>
+    <li><a href="tooltips.html">Tooltips</a></li>
+    </ul>
+    </li>
+    <li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+    <i class="fa fa-file-text" aria-hidden="true"></i> Formulários <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu submenu">
+    <li><a href="#">Inputs</a></li>
+    <li><a href="#">Dropdowns</a></li>
+    <li><a href="#">Datapickers</a></li>
+    <li><a href="#">Checkboxes e Radios</a></li>
+    </ul>
+    </li>
+    <li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+    <i class="fa fa-table" aria-hidden="true"></i> Tabelas <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu submenu">
+    <li><a href="#">Básicas</a></li>
+    <li><a href="#">Dinâmicas</a></li>
+    </ul>
+    </li>
+    </ul>
+
+    <ul class="nav navbar-nav navbar-right menu">
+    <li class="dropdown profile-area">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+    <figure>
+    <img class="picture" src="img/user.jpg" alt="Perfil">
+    </figure>
+    <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu submenu">
+    <li><a href="#"><i class="fa fa-cog fa-fw" aria-hidden="true"></i> Confirgurações</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#"><i class="fa fa-power-off" aria-hidden="true"></i> Sair</a></li>
+    </ul>
+    </li>
+    </ul>
+    </div>
+    </div>
+    </nav>
+    <!--====================
+    END TOP MENU
+    ====================-->
+
+
+    <div class="container-fluid">
+      <div class="row">
+        <!--====================
+        SIDE MENU
+        ====================-->
+        <nav class="navbar-default side-menu">
+          <div class="profile-area">
+            <figure>
+              <img class="picture" src="img/user.jpg" alt="Perfil">
+            </figure>
+            <h5 class="title">Nome Sobrenome</h5>
+            <ul class="list-inline">
+              <li><a href="#"><i class="fa fa-cog fa-fw" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-power-off" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+
+          <ul class="list menu">
+            <li>
+              <a href="#">
+                <i class="fa fa-th" aria-hidden="true"></i> Início
+              </a>
+            </li>
+            <li>
+              <a href="#interface-do-usuario" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="interface-do-usuario">
+                <i class="fa fa-tint" aria-hidden="true"></i> Interface do Usuário
+              </a>
+              <ul id="interface-do-usuario" class="list collapse submenu" aria-expanded="false">
+                <li><a href="botoes.html">Botões</a></li>
+                <li><a href="paineis.html">Painéis</a></li>
+                <li><a href="tabs.html">Tabs</a></li>
+                <li><a href="modais.html">Modais</a></li>
+                <li><a href="alertas.html">Alertas</a></li>
+                <li><a href="collapses.html">Collapses</a></li>
+                <li><a href="tooltips.html">Tooltips</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#formularios" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="formularios">
+                <i class="fa fa-file-text" aria-hidden="true"></i> Formulários
+              </a>
+              <ul id="formularios" class="list collapse submenu" aria-expanded="false">
+                <li><a href="#">Inputs</a></li>
+                <li><a href="#">Dropdowns</a></li>
+                <li><a href="#">Datapickers</a></li>
+                <li><a href="#">Checkboxes e Radios</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#tabelas" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="tabelas">
+                <i class="fa fa-table" aria-hidden="true"></i> Tabelas
+              </a>
+              <ul id="tabelas" class="list collapse submenu" aria-expanded="false">
+                <li><a href="#">Básicas</a></li>
+                <li><a href="#">Dinâmicas</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <!--====================
+        END SIDE MENU
+        ====================-->
+
+
+        <div class="col-lg-offset-2 col-lg-10 ">
+          <main>
+            <h1 class="page-title">
+              <i class="fa fa-th" aria-hidden="true"></i> Início
+            </h1>
+
+            <!--====================
+            STATUS REPORT
+            ====================-->
+            <section class="status-report">
+              <div class="row">
+                <div class="col-xs-6 col-sm-3">
+                  <div class="content-box">
+                    <h2 class="title">Item</h2>
+                    <span class="number">Número para aparecer</span>
+                  </div>
+                </div>
+
+                <div class="col-xs-6 col-sm-3">
+                  <div class="content-box">
+                    <h2 class="title">Item</h2>
+                    <span class="number">Número para aparecer</span>
+                  </div>
+                </div>
+
+                <div class="col-xs-6 col-sm-3">
+                  <div class="content-box">
+                    <h2 class="title">Item</h2>
+                    <span class="number">Número para aparecer</span>
+                  </div>
+                </div>
+
+                <div class="col-xs-6 col-sm-3">
+                  <div class="content-box">
+                    <h2 class="title">Item</h2>
+                    <span class="number">Número para aparecer</span>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!--====================
+            END STATUS REPORT
+            ====================-->
+          </main>
+        </div>
+      </div>
+    </div>
+
+    <!--====================
+    JAVASCRIPT
+    ====================-->
+    <!-- LIBRARY: JQUERY -->
+    <script src="js/libraries/jquery/jquery-3.3.1.min.js"></script>
+
+    <!-- FRAMEWORK: BOOTSTRAP -->
+    <script src="js/frameworks/bootstrap/bootstrap.min.js"></script>
+
+    <!-- PLUGIN: JQUERY MASK -->
+    <script src="js/libraries/jquery-mask/jquery.mask.js"></script>
+
+    <!-- PLUGIN: NOME -->
+    <!-- <script src="js/plugins/nome-do-plugin/nome.js"></script> -->
+
+    <!-- CUSTOM -->
+    <script src="js/javascript.js"></script>
+  </body>
+</html>
