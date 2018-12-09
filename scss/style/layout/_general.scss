@@ -203,7 +203,12 @@ button,
   width: $side-menu-width;
   background-color: $gray-900;
   top: 0;
+  // left: -$side-menu-width;
   bottom: 0;
+
+  &.is-open {
+
+  }
 
   .logo {
     width: 50px;

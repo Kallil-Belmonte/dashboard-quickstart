@@ -44,7 +44,7 @@ const themeFunctions = {
     $('.hamburger').click(function() {
       $(this).toggleClass('is-active');
 
-      $('.side-menu').toggleClass('open-side-menu');
+      $('.side-menu').toggleClass('is-open');
     });
 
     // Menu
