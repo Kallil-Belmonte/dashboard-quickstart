@@ -2,10 +2,7 @@
 HELPERS
 ==============================*/
 
-@import "helpers/variables";
-@import "helpers/placeholders";
-@import "helpers/mixins";
-@import "helpers/functions";
+@import "helpers/helpers";
 
 
 /*==============================
@@ -26,6 +23,4 @@ PLUGINS
 LAYOUT
 ==============================*/
 
-@import "layout/header";
-@import "layout/general";
-@import "layout/footer";
+@import "layout/layout";
