@@ -11,7 +11,7 @@
 /* CENTER ABSOLUTE */
 
 .center-absolute {
-	@extend %center-absolute;
+  @extend %center-absolute;
 }
 
 /* Horizontal center */
@@ -188,11 +188,11 @@ button,
 
 }
 
-.title {
+.section-title {
 
 }
 
-.subtitle {
+.section-subtitle {
 
 }
 
@@ -221,7 +221,7 @@ button,
 .content-box {
 
 
-  > .title {
+  .section-title {
 
   }
 }
