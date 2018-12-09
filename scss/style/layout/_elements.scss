@@ -1,0 +1,55 @@
+/* ELEMENTS
+==============================*/
+
+/* TITLE */
+
+.page-title {
+
+}
+
+.page-subtitle {
+
+}
+
+.section-title {
+
+}
+
+.section-subtitle {
+
+}
+
+
+/* SIDE MENU */
+
+.side-menu {
+  width: $side-menu-width;
+  background-color: $gray-900;
+  top: 0;
+  // left: -$side-menu-width;
+  bottom: 0;
+
+  &.is-open {
+
+  }
+
+  .logo {
+    width: 50px;
+    margin: 30px auto 0;
+  }
+
+  .items {
+    margin-top: 50px;
+  }
+}
+
+
+/* CONTENT BOX */
+
+.content-box {
+
+
+  .section-title {
+
+  }
+}
