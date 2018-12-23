@@ -50,10 +50,10 @@ const themeFunctions = {
   // SIDE MENU
   sideMenu: function() {
     $('.side-menu .items > li > a').click(function(event) {
-      event.preventDefault();
-
-      $('.side-menu .items > li > a').removeClass('active');
-      $(this).toggleClass('active');
+      if ($(this).next().length > 0) {
+        event.preventDefault();
+        $(this).toggleClass('active').parent().siblings().find('.active').removeClass('active');
+      }
     });
   },
 

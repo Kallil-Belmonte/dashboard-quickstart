@@ -4,7 +4,14 @@
 /* TITLE */
 
 .page-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 25px 0 30px;
 
+  .svg-inline--fa {
+    color: $primary;
+    margin-right: 5px;
+  }
 }
 
 .page-subtitle {
@@ -29,7 +36,7 @@
   top: 0;
   left: -$side-menu-width;
   bottom: 0;
-  transition: left 0.3s ease;
+  transition: left 0.1s ease;
   z-index: 5;
 
   @include media-breakpoint-up(lg) {
@@ -47,7 +54,7 @@
   }
 
   .items {
-    margin-top: 50px;
+    margin-top: 65px;
 
     a {
       display: block;
@@ -61,6 +68,16 @@
         transition: color 0.3s ease;
       }
 
+      &:hover,
+      &.active {
+        color: #FFF;
+        background-color: darken($gray-900, 3%);
+
+        .svg-inline--fa {
+          color: $primary;
+        }
+      }
+
       + .submenu {
         max-height: 0;
         background-color: lighten($gray-900, 1%);
@@ -69,16 +86,6 @@
 
         a {
           padding-left: 50px;
-        }
-      }
-
-      &:hover,
-      &.active {
-        color: #FFF;
-        background-color: darken($gray-900, 3%);
-
-        .svg-inline--fa {
-          color: $primary;
         }
       }
 
@@ -96,9 +103,12 @@
 /* CONTENT BOX */
 
 .content-box {
+  padding: 20px;
+  border-radius: 6px;
+  background-color: #FFF;
 
-
-  .section-title {
-
+  > .title {
+    font-size: 18px;
+    font-weight: 700;
   }
 }

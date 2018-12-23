@@ -44,6 +44,7 @@
     display: block;
     top: 50%;
     margin-top: -2px;
+    transition: background-color 0.8s ease;
 
     &,
     &::before,
@@ -109,7 +110,7 @@
 /* MAIN MENU */
 
 .main-menu {
-  background-color: $gray-200;
+  background-color: #FFF;
 
   .navbar-nav {
     .nav-link {
