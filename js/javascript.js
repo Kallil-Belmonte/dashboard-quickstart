@@ -43,12 +43,16 @@ const themeFunctions = {
   hamburgerMenu: function() {
     $('.hamburger').click(function() {
       $(this).toggleClass('is-active');
-
-      $('.side-menu').toggleClass('is-open');
     });
+  },
 
-    // Menu
-    $('.side-menu .menu > li > a').click(function() {
+
+  // SIDE MENU
+  sideMenu: function() {
+    $('.side-menu .items > li > a').click(function(event) {
+      event.preventDefault();
+
+      $('.side-menu .items > li > a').removeClass('active');
       $(this).toggleClass('active');
     });
   },
@@ -59,6 +63,7 @@ const themeFunctions = {
     this.tooltips();
     this.topMenu();
     this.hamburgerMenu();
+    this.sideMenu();
   }
 
 }

@@ -23,14 +23,22 @@
 /* SIDE MENU */
 
 .side-menu {
+  font-size: 14px;
   width: $side-menu-width;
   background-color: $gray-900;
   top: 0;
-  // left: -$side-menu-width;
+  left: -$side-menu-width;
   bottom: 0;
+  transition: left 0.3s ease;
+  z-index: 5;
 
-  &.is-open {
+  @include media-breakpoint-up(lg) {
+    left: 0;
+  }
 
+  &.show {
+    left: 0;
+    transition: left 0.3s ease;
   }
 
   .logo {
@@ -40,6 +48,47 @@
 
   .items {
     margin-top: 50px;
+
+    a {
+      display: block;
+      color: #989EB3;
+      padding: 12px 0 12px 25px;
+      transition: all 0.3s ease;
+
+      .svg-inline--fa {
+        color: rgba(255, 255, 255, 0.2);
+        margin-right: 10px;
+        transition: color 0.3s ease;
+      }
+
+      + .submenu {
+        max-height: 0;
+        background-color: lighten($gray-900, 1%);
+        overflow: hidden;
+        transition: max-height 0.4s ease;
+
+        a {
+          padding-left: 50px;
+        }
+      }
+
+      &:hover,
+      &.active {
+        color: #FFF;
+        background-color: darken($gray-900, 3%);
+
+        .svg-inline--fa {
+          color: $primary;
+        }
+      }
+
+      &.active {
+        + .submenu {
+          max-height: 1000px;
+          transition: max-height 0.8s ease;
+        }
+      }
+    }
   }
 }
 

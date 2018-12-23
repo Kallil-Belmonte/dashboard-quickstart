@@ -117,7 +117,11 @@
 /* MAIN */
 
 main {
-  margin-left: $side-menu-width;
+  margin-left: 0;
+
+  @include media-breakpoint-up(lg) {
+    margin-left: $side-menu-width;
+  }
 }
 
 

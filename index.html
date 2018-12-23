@@ -64,10 +64,10 @@
             <a class="nav-link" href="#">icon</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a id="user-dropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Dropdown
             </a>
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenu">
+            <div class="dropdown-menu dropdown-menu-right position-absolute" aria-labelledby="user-dropdown">
               <a class="dropdown-item" href="#">Action</a>
               <a class="dropdown-item" href="#">Another action</a>
               <a class="dropdown-item" href="#">Something else here</a>
@@ -95,17 +95,17 @@
     <nav class="side-menu position-fixed">
       <!-- <img class="d-block logo" src="img/logo.png" alt="Nome da Empresa/Sistema"> -->
 
-      <ul class="items">
+      <ul class="items list-unstyled">
         <li>
-          <a href="#">
+          <a href="#" role="button">
             <i class="fas fa-tachometer-alt"></i> Início
           </a>
         </li>
         <li>
-          <a href="#interface-do-usuario" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="interface-do-usuario">
+          <a href="#" role="button">
             <i class="fas fa-tint"></i> Interface do Usuário
           </a>
-          <ul id="interface-do-usuario" class="collapse" aria-expanded="false">
+          <ul class="submenu list-unstyled">
             <li><a href="botoes.html">Botões</a></li>
             <li><a href="paineis.html">Painéis</a></li>
             <li><a href="tabs.html">Tabs</a></li>
@@ -116,10 +116,10 @@
           </ul>
         </li>
         <li>
-          <a href="#formularios" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="formularios">
+          <a href="#" role="button">
             <i class="far fa-file-alt"></i> Formulários
           </a>
-          <ul id="formularios" class="collapse" aria-expanded="false">
+          <ul class="submenu list-unstyled">
             <li><a href="#">Inputs</a></li>
             <li><a href="#">Dropdowns</a></li>
             <li><a href="#">Datapickers</a></li>
@@ -127,10 +127,10 @@
           </ul>
         </li>
         <li>
-          <a href="#tabelas" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="tabelas">
+          <a href="#" role="button">
             <i class="fas fa-table"></i> Tabelas
           </a>
-          <ul id="tabelas" class="list collapse submenu" aria-expanded="false">
+          <ul class="submenu list-unstyled">
             <li><a href="#">Básicas</a></li>
             <li><a href="#">Dinâmicas</a></li>
           </ul>
